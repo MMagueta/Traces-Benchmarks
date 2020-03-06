@@ -1,0 +1,484 @@
+#AKY_GIT_VERSION 6396440 print the difference of metrics
+#AKY_GIT_DATE (date of the cmake configuration) 2019-07-25 10:45:51 -0300
+#This file was generated using aky_converter (distributed with akypuera).
+#aky_converter's command line: aky_converter rastro-0-0.rst rastro-1-0.rst rastro-2-0.rst rastro-3-0.rst rastro-4-0.rst rastro-5-0.rst rastro-6-0.rst rastro-7-0.rst 
+# POTI_VERSION 5.0
+%EventDef PajePushState 0
+%       Time date
+%       Container string
+%       Type string
+%       Value string
+%EndEventDef
+%EventDef PajePopState 1
+%       Time date
+%       Container string
+%       Type string
+%EndEventDef
+%EventDef PajeSetState 2
+%       Time date
+%       Container string
+%       Type string
+%       Value string
+%EndEventDef
+%EventDef PajeResetState 3
+%       Time date
+%       Container string
+%       Type string
+%       StartContainer string
+%       Value string
+%       Key string
+%EndEventDef
+%EventDef PajeAddVariable 4
+%       Time date
+%       Container string
+%       Type string
+%       Value double
+%EndEventDef
+%EventDef PajeSubVariable 5
+%       Time date
+%       Container string
+%       Type string
+%       Value double
+%EndEventDef
+%EventDef PajeSetVariable 6
+%       Time date
+%       Container string
+%       Type string
+%       Value double
+%EndEventDef
+%EventDef PajeStartLink 7
+%       Time date
+%       Container string
+%       Type string
+%       StartContainer string
+%       Value string
+%       Key string
+%EndEventDef
+%EventDef PajeEndLink 8
+%       Time date
+%       Container string
+%       Type string
+%       EndContainer string
+%       Value string
+%       Key string
+%EndEventDef
+%EventDef PajeNewEvent 9
+%       Time date
+%       Container string
+%       Type string
+%       Value double
+%EndEventDef
+%EventDef PajeCreateContainer 10
+%       Time date
+%       Alias string
+%       Container string
+%       Type string
+%       Name string
+%EndEventDef
+%EventDef PajeDestroyContainer 11
+%       Time date
+%       Type string
+%       Name string
+%EndEventDef
+%EventDef PajeDefineContainerType 12
+%       Alias string
+%       Type string
+%       Name string
+%EndEventDef
+%EventDef PajeDefineVariableType 13
+%       Alias string
+%       Type string
+%       Name string
+%       Color color
+%EndEventDef
+%EventDef PajeDefineStateType 14
+%       Alias string
+%       Type string
+%       Name string
+%EndEventDef
+%EventDef PajeDefineEventType 15
+%       Alias string
+%       Type string
+%       Name string
+%EndEventDef
+%EventDef PajeDefineLinkType 16
+%       Alias string
+%       Type string
+%       StartContainerType string
+%       EndContainerType string
+%       Name string
+%EndEventDef
+%EventDef PajeDefineEntityValue 17
+%       Alias string
+%       Type string
+%       Name string
+%       Color color
+%EndEventDef
+%EventDef PajePushState 18
+%       Time date
+%       Container string
+%       Type string
+%       Value string
+%       SendMark string
+%EndEventDef
+%EventDef PajePushState 19
+%       Time date
+%       Container string
+%       Type string
+%       Value string
+%       MsgSize string
+%       SendMark string
+%EndEventDef
+%EventDef PajePushState 20
+%       Time date
+%       Container string
+%       Type string
+%       Value string
+%       MsgSize string
+%EndEventDef
+%EventDef PajeStartLink 21
+%       Time date
+%       Container string
+%       Type string
+%       StartContainer string
+%       Value string
+%       Key string
+%       Size string
+%       Mark string
+%EndEventDef
+#
+# This is the type hierarchy for this trace file
+#
+12 ROOT 0 ROOT
+12 PROCESS ROOT PROCESS
+14 STATE PROCESS STATE
+16 LINK ROOT PROCESS PROCESS LINK
+#
+# Let the timestamped events describe behavior
+#
+10 0.000000000 root 0 ROOT root
+10 0.000000000 rank2 root PROCESS rank2
+0 0.000002146 rank2 STATE MPI_Comm_size
+1 0.000005960 rank2 STATE
+0 0.000006676 rank2 STATE MPI_Comm_rank
+1 0.000006914 rank2 STATE
+20 0.000020981 rank2 STATE MPI_Recv 80000
+10 0.000467539 rank4 root PROCESS rank4
+0 0.000468731 rank4 STATE MPI_Comm_size
+1 0.000471592 rank4 STATE
+0 0.000471830 rank4 STATE MPI_Comm_rank
+1 0.000472069 rank4 STATE
+20 0.000481844 rank4 STATE MPI_Recv 80000
+10 0.000875711 rank6 root PROCESS rank6
+0 0.000877142 rank6 STATE MPI_Comm_size
+1 0.000880718 rank6 STATE
+0 0.000880957 rank6 STATE MPI_Comm_rank
+1 0.000881195 rank6 STATE
+20 0.000892639 rank6 STATE MPI_Recv 80000
+10 0.001319170 rank5 root PROCESS rank5
+0 0.001321793 rank5 STATE MPI_Comm_size
+1 0.001325607 rank5 STATE
+0 0.001326084 rank5 STATE MPI_Comm_rank
+1 0.001326323 rank5 STATE
+20 0.001339674 rank5 STATE MPI_Recv 80000
+10 0.001715899 rank1 root PROCESS rank1
+0 0.001717091 rank1 STATE MPI_Comm_size
+1 0.001719475 rank1 STATE
+0 0.001720190 rank1 STATE MPI_Comm_rank
+1 0.001720428 rank1 STATE
+20 0.001729727 rank1 STATE MPI_Recv 80000
+10 0.002142429 rank7 root PROCESS rank7
+0 0.002144098 rank7 STATE MPI_Comm_size
+1 0.002146959 rank7 STATE
+0 0.002147436 rank7 STATE MPI_Comm_rank
+1 0.002147675 rank7 STATE
+20 0.002161980 rank7 STATE MPI_Recv 80000
+10 0.002542973 rank0 root PROCESS rank0
+0 0.002543926 rank0 STATE MPI_Comm_size
+1 0.002547026 rank0 STATE
+0 0.002547503 rank0 STATE MPI_Comm_rank
+1 0.002547503 rank0 STATE
+0 0.002794027 rank0 STATE MPI_Wtime
+1 0.002800226 rank0 STATE
+19 0.002805233 rank0 STATE MPI_Send 80000 0
+21 0.002817631 root LINK rank0 PTP 0_1_0 80000 0
+10 0.002939701 rank3 root PROCESS rank3
+0 0.002940893 rank3 STATE MPI_Comm_size
+1 0.002943516 rank3 STATE
+0 0.002943993 rank3 STATE MPI_Comm_rank
+1 0.002943993 rank3 STATE
+20 0.002954245 rank3 STATE MPI_Recv 80000
+1 0.002996445 rank0 STATE
+20 0.002997875 rank0 STATE MPI_Recv 80000
+8 0.003002644 root LINK rank1 PTP 0_1_0
+1 0.003002882 rank1 STATE
+19 0.003004551 rank1 STATE MPI_Send 80000 0
+21 0.003005743 root LINK rank1 PTP 1_2_1 80000 0
+1 0.003140688 rank1 STATE
+20 0.003142118 rank1 STATE MPI_Recv 80000
+8 0.003147602 root LINK rank2 PTP 1_2_1
+1 0.003147840 rank2 STATE
+19 0.003149033 rank2 STATE MPI_Send 80000 0
+21 0.003149748 root LINK rank2 PTP 2_3_2 80000 0
+1 0.003280401 rank2 STATE
+20 0.003282309 rank2 STATE MPI_Recv 80000
+8 0.003287554 root LINK rank3 PTP 2_3_2
+1 0.003287792 rank3 STATE
+19 0.003288984 rank3 STATE MPI_Send 80000 0
+21 0.003289700 root LINK rank3 PTP 3_4_3 80000 0
+1 0.003413439 rank3 STATE
+20 0.003415346 rank3 STATE MPI_Recv 80000
+8 0.003420115 root LINK rank4 PTP 3_4_3
+1 0.003420353 rank4 STATE
+19 0.003421783 rank4 STATE MPI_Send 80000 0
+21 0.003422260 root LINK rank4 PTP 4_5_4 80000 0
+1 0.003556013 rank4 STATE
+20 0.003557920 rank4 STATE MPI_Recv 80000
+8 0.003563643 root LINK rank5 PTP 4_5_4
+1 0.003563881 rank5 STATE
+19 0.003564835 rank5 STATE MPI_Send 80000 0
+21 0.003565311 root LINK rank5 PTP 5_6_5 80000 0
+1 0.003700972 rank5 STATE
+20 0.003702641 rank5 STATE MPI_Recv 80000
+8 0.003709555 root LINK rank6 PTP 5_6_5
+1 0.003709793 rank6 STATE
+19 0.003710747 rank6 STATE MPI_Send 80000 0
+21 0.003711462 root LINK rank6 PTP 6_7_6 80000 0
+1 0.003845930 rank6 STATE
+20 0.003848076 rank6 STATE MPI_Recv 80000
+8 0.003853559 root LINK rank7 PTP 6_7_6
+1 0.003853798 rank7 STATE
+19 0.003854990 rank7 STATE MPI_Send 80000 0
+21 0.003859997 root LINK rank7 PTP 7_0_7 80000 0
+8 0.003952742 root LINK rank0 PTP 7_0_7
+1 0.003952980 rank0 STATE
+0 0.003953218 rank0 STATE MPI_Wtime
+1 0.003953457 rank7 STATE
+1 0.003953457 rank0 STATE
+20 0.003968954 rank7 STATE MPI_Recv 80000
+0 0.004024029 rank0 STATE MPI_Wtime
+1 0.004024267 rank0 STATE
+19 0.004024506 rank0 STATE MPI_Send 80000 1
+21 0.004024982 root LINK rank0 PTP 0_1_8 80000 1
+8 0.004068375 root LINK rank1 PTP 0_1_8
+1 0.004068613 rank0 STATE
+1 0.004068613 rank1 STATE
+19 0.004068613 rank1 STATE MPI_Send 80000 1
+20 0.004068851 rank0 STATE MPI_Recv 80000
+21 0.004068851 root LINK rank1 PTP 1_2_9 80000 1
+8 0.004112720 root LINK rank2 PTP 1_2_9
+1 0.004112720 rank2 STATE
+1 0.004112959 rank1 STATE
+19 0.004112959 rank2 STATE MPI_Send 80000 1
+21 0.004113197 root LINK rank2 PTP 2_3_10 80000 1
+20 0.004113436 rank1 STATE MPI_Recv 80000
+8 0.004156590 root LINK rank3 PTP 2_3_10
+1 0.004156590 rank2 STATE
+1 0.004156590 rank3 STATE
+19 0.004157066 rank3 STATE MPI_Send 80000 1
+21 0.004157305 root LINK rank3 PTP 3_4_11 80000 1
+20 0.004157782 rank2 STATE MPI_Recv 80000
+8 0.004200697 root LINK rank4 PTP 3_4_11
+1 0.004200697 rank3 STATE
+1 0.004200697 rank4 STATE
+19 0.004200935 rank4 STATE MPI_Send 80000 1
+21 0.004201174 root LINK rank4 PTP 4_5_12 80000 1
+20 0.004201651 rank3 STATE MPI_Recv 80000
+8 0.004244328 root LINK rank5 PTP 4_5_12
+1 0.004244328 rank4 STATE
+1 0.004244566 rank5 STATE
+19 0.004244804 rank5 STATE MPI_Send 80000 1
+21 0.004244804 root LINK rank5 PTP 5_6_13 80000 1
+20 0.004245281 rank4 STATE MPI_Recv 80000
+8 0.004288912 root LINK rank6 PTP 5_6_13
+1 0.004289150 rank5 STATE
+1 0.004289150 rank6 STATE
+19 0.004289389 rank6 STATE MPI_Send 80000 1
+21 0.004289627 root LINK rank6 PTP 6_7_14 80000 1
+20 0.004290104 rank5 STATE MPI_Recv 80000
+8 0.004333019 root LINK rank7 PTP 6_7_14
+1 0.004333019 rank7 STATE
+1 0.004333258 rank6 STATE
+19 0.004333258 rank7 STATE MPI_Send 80000 1
+21 0.004333496 root LINK rank7 PTP 7_0_15 80000 1
+20 0.004334211 rank6 STATE MPI_Recv 80000
+8 0.004377842 root LINK rank0 PTP 7_0_15
+1 0.004377842 rank0 STATE
+0 0.004378080 rank0 STATE MPI_Wtime
+1 0.004378319 rank7 STATE
+1 0.004378319 rank0 STATE
+20 0.004379511 rank7 STATE MPI_Recv 80000
+0 0.004434109 rank0 STATE MPI_Wtime
+1 0.004434109 rank0 STATE
+19 0.004434347 rank0 STATE MPI_Send 80000 2
+21 0.004434824 root LINK rank0 PTP 0_1_16 80000 2
+8 0.004474640 root LINK rank1 PTP 0_1_16
+1 0.004474878 rank1 STATE
+19 0.004474878 rank1 STATE MPI_Send 80000 2
+21 0.004475117 root LINK rank1 PTP 1_2_17 80000 2
+1 0.004475355 rank0 STATE
+20 0.004475594 rank0 STATE MPI_Recv 80000
+8 0.004513979 root LINK rank2 PTP 1_2_17
+1 0.004513979 rank2 STATE
+19 0.004514456 rank2 STATE MPI_Send 80000 2
+21 0.004514694 root LINK rank2 PTP 2_3_18 80000 2
+1 0.004514933 rank1 STATE
+20 0.004515171 rank1 STATE MPI_Recv 80000
+8 0.004554033 root LINK rank3 PTP 2_3_18
+1 0.004554272 rank3 STATE
+19 0.004554272 rank3 STATE MPI_Send 80000 2
+1 0.004554510 rank2 STATE
+21 0.004554510 root LINK rank3 PTP 3_4_19 80000 2
+20 0.004555225 rank2 STATE MPI_Recv 80000
+8 0.004593611 root LINK rank4 PTP 3_4_19
+1 0.004593849 rank4 STATE
+19 0.004593849 rank4 STATE MPI_Send 80000 2
+1 0.004594326 rank3 STATE
+21 0.004594326 root LINK rank4 PTP 4_5_20 80000 2
+20 0.004595280 rank3 STATE MPI_Recv 80000
+8 0.004634142 root LINK rank5 PTP 4_5_20
+1 0.004634142 rank5 STATE
+19 0.004634380 rank5 STATE MPI_Send 80000 2
+21 0.004634380 root LINK rank5 PTP 5_6_21 80000 2
+1 0.004634619 rank4 STATE
+20 0.004635334 rank4 STATE MPI_Recv 80000
+8 0.004675150 root LINK rank6 PTP 5_6_21
+1 0.004675388 rank6 STATE
+19 0.004675388 rank6 STATE MPI_Send 80000 2
+1 0.004675627 rank5 STATE
+21 0.004675627 root LINK rank6 PTP 6_7_22 80000 2
+20 0.004676342 rank5 STATE MPI_Recv 80000
+8 0.004716635 root LINK rank7 PTP 6_7_22
+1 0.004716873 rank6 STATE
+1 0.004716873 rank7 STATE
+19 0.004716873 rank7 STATE MPI_Send 80000 2
+21 0.004717112 root LINK rank7 PTP 7_0_23 80000 2
+20 0.004717827 rank6 STATE MPI_Recv 80000
+8 0.004757643 root LINK rank0 PTP 7_0_23
+1 0.004757881 rank7 STATE
+1 0.004757881 rank0 STATE
+0 0.004757881 rank0 STATE MPI_Wtime
+1 0.004758120 rank0 STATE
+20 0.004758835 rank7 STATE MPI_Recv 80000
+0 0.004812241 rank0 STATE MPI_Wtime
+1 0.004812479 rank0 STATE
+19 0.004812717 rank0 STATE MPI_Send 80000 3
+21 0.004813194 root LINK rank0 PTP 0_1_24 80000 3
+8 0.004852295 root LINK rank1 PTP 0_1_24
+1 0.004852295 rank1 STATE
+19 0.004852533 rank1 STATE MPI_Send 80000 3
+21 0.004852533 root LINK rank1 PTP 1_2_25 80000 3
+1 0.004852772 rank0 STATE
+20 0.004853010 rank0 STATE MPI_Recv 80000
+8 0.004896879 root LINK rank2 PTP 1_2_25
+1 0.004896879 rank2 STATE
+19 0.004897118 rank2 STATE MPI_Send 80000 3
+21 0.004897356 root LINK rank2 PTP 2_3_26 80000 3
+1 0.004897594 rank1 STATE
+20 0.004898071 rank1 STATE MPI_Recv 80000
+8 0.004937410 root LINK rank3 PTP 2_3_26
+1 0.004937649 rank3 STATE
+19 0.004937649 rank3 STATE MPI_Send 80000 3
+1 0.004938126 rank2 STATE
+21 0.004938126 root LINK rank3 PTP 3_4_27 80000 3
+20 0.004938841 rank2 STATE MPI_Recv 80000
+8 0.004977226 root LINK rank4 PTP 3_4_27
+1 0.004977465 rank3 STATE
+1 0.004977465 rank4 STATE
+19 0.004977465 rank4 STATE MPI_Send 80000 3
+21 0.004977703 root LINK rank4 PTP 4_5_28 80000 3
+20 0.004978418 rank3 STATE MPI_Recv 80000
+8 0.005017519 root LINK rank5 PTP 4_5_28
+1 0.005017519 rank5 STATE
+19 0.005017519 rank5 STATE MPI_Send 80000 3
+1 0.005017996 rank4 STATE
+21 0.005017996 root LINK rank5 PTP 5_6_29 80000 3
+20 0.005018711 rank4 STATE MPI_Recv 80000
+8 0.005057812 root LINK rank6 PTP 5_6_29
+1 0.005058050 rank6 STATE
+19 0.005058050 rank6 STATE MPI_Send 80000 3
+1 0.005058289 rank5 STATE
+21 0.005058289 root LINK rank6 PTP 6_7_30 80000 3
+20 0.005059004 rank5 STATE MPI_Recv 80000
+8 0.005099297 root LINK rank7 PTP 6_7_30
+1 0.005099297 rank7 STATE
+1 0.005099535 rank6 STATE
+19 0.005099535 rank7 STATE MPI_Send 80000 3
+21 0.005099535 root LINK rank7 PTP 7_0_31 80000 3
+20 0.005100489 rank6 STATE MPI_Recv 80000
+8 0.005140543 root LINK rank0 PTP 7_0_31
+1 0.005140781 rank0 STATE
+0 0.005140781 rank0 STATE MPI_Wtime
+1 0.005141020 rank7 STATE
+1 0.005141020 rank0 STATE
+20 0.005141735 rank7 STATE MPI_Recv 80000
+0 0.005194902 rank0 STATE MPI_Wtime
+1 0.005194902 rank0 STATE
+19 0.005195141 rank0 STATE MPI_Send 80000 4
+21 0.005195379 root LINK rank0 PTP 0_1_32 80000 4
+8 0.005234957 root LINK rank1 PTP 0_1_32
+1 0.005235195 rank1 STATE
+19 0.005235195 rank1 STATE MPI_Send 80000 4
+1 0.005235434 rank0 STATE
+21 0.005235434 root LINK rank1 PTP 1_2_33 80000 4
+20 0.005235672 rank0 STATE MPI_Recv 80000
+8 0.005274296 root LINK rank2 PTP 1_2_33
+1 0.005274296 rank2 STATE
+19 0.005274296 rank2 STATE MPI_Send 80000 4
+21 0.005274773 root LINK rank2 PTP 2_3_34 80000 4
+1 0.005275011 rank1 STATE
+0 0.005276203 rank1 STATE MPI_Finalize
+8 0.005314589 root LINK rank3 PTP 2_3_34
+1 0.005314589 rank3 STATE
+19 0.005314589 rank3 STATE MPI_Send 80000 4
+1 0.005314827 rank2 STATE
+21 0.005314827 root LINK rank3 PTP 3_4_35 80000 4
+0 0.005315781 rank2 STATE MPI_Finalize
+8 0.005352020 root LINK rank4 PTP 3_4_35
+1 0.005352259 rank4 STATE
+19 0.005352259 rank4 STATE MPI_Send 80000 4
+1 0.005352497 rank3 STATE
+21 0.005352497 root LINK rank4 PTP 4_5_36 80000 4
+0 0.005353451 rank3 STATE MPI_Finalize
+8 0.005391598 root LINK rank5 PTP 4_5_36
+1 0.005391836 rank5 STATE
+19 0.005391836 rank5 STATE MPI_Send 80000 4
+1 0.005392075 rank4 STATE
+21 0.005392075 root LINK rank5 PTP 5_6_37 80000 4
+0 0.005393267 rank4 STATE MPI_Finalize
+8 0.005430460 root LINK rank6 PTP 5_6_37
+1 0.005430460 rank6 STATE
+1 0.005430698 rank5 STATE
+19 0.005430698 rank6 STATE MPI_Send 80000 4
+21 0.005431175 root LINK rank6 PTP 6_7_38 80000 4
+0 0.005431890 rank5 STATE MPI_Finalize
+8 0.005473137 root LINK rank7 PTP 6_7_38
+1 0.005473137 rank6 STATE
+1 0.005473375 rank7 STATE
+19 0.005473614 rank7 STATE MPI_Send 80000 4
+21 0.005473614 root LINK rank7 PTP 7_0_39 80000 4
+0 0.005474091 rank6 STATE MPI_Finalize
+8 0.005515575 root LINK rank0 PTP 7_0_39
+1 0.005515575 rank7 STATE
+1 0.005515814 rank0 STATE
+0 0.005516052 rank0 STATE MPI_Wtime
+1 0.005516291 rank0 STATE
+0 0.005516529 rank7 STATE MPI_Finalize
+0 0.005533457 rank0 STATE MPI_Finalize
+1 0.052070618 rank6 STATE
+11 0.052070618 PROCESS rank6
+1 0.052885056 rank5 STATE
+11 0.052885056 PROCESS rank5
+1 0.053003550 rank2 STATE
+11 0.053003550 PROCESS rank2
+1 0.053053141 rank3 STATE
+11 0.053053141 PROCESS rank3
+1 0.053102732 rank0 STATE
+11 0.053102732 PROCESS rank0
+1 0.053272724 rank4 STATE
+11 0.053272724 PROCESS rank4
+1 0.053347111 rank1 STATE
+11 0.053347111 PROCESS rank1
+1 0.054286718 rank7 STATE
+11 0.054286718 PROCESS rank7
+11 0.054286718 ROOT root
